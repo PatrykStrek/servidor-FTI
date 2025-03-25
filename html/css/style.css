@@ -144,9 +144,12 @@ h3:hover {
 }
 
 .flan-box img {
-  height: 200px;
-  object-fit: cover;
+  width: 100%;
+  height: 200px; /* Altura fija */
+  object-fit: cover; /* Recorta la imagen si es necesario */
+  border-radius: 10px;
 }
+
 
 /* ========================= */
 /* Botón de compra           */
