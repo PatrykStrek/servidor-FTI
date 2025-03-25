@@ -2,171 +2,206 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Only Flans</title>
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
-  <!-- Bootstrap JavaScript (jQuery es necesario) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" defer></script>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 3: CSS</title>
+    <style>
+    </style>
 </head>
 
 <body>
-  <!-- Header -->
-  <header>
-    <div class="jumbotron jumbotron-gradient text-center">
-      <h1>🍮 Nuestra Web</h1>
-      <p>La mejor tienda de flanes de la red</p>
-    </div>
-  </header>
+    <header>
+        <h1>Laboratorio 3: CSS</h1>
+        <h2>Fundamentos de las Tecnologías de la Información</h2>
+        <h3>Explorando los pilares de la informática y la programación.</h3>
+    </header>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">🍮 Nuestra Web</a>
-      </div>
-      <div class="collapse navbar-collapse" id="navbar-menu">
-        <ul class="nav navbar-nav">
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Flanes</a></li>
-          <li><a href="#">Recetas</a></li>
-          <li><a href="#">Contacto</a></li>
-          <li>
-            <button id="toggle-dark-mode" class="btn btn-default navbar-btn">Modo Oscuro</button>
-          </li>
+    <section>
+        <p>La historia de la informática se remonta a dispositivos mecánicos ancestrales, como
+            la <a href="https://es.wikipedia.org/wiki/Mecanismo_de_Anticitera" target="_blank"><strong>Máquina de
+                    Anticitera</strong></a>, un mecanismo de engranajes descubierto en un naufragio en Grecia y datado
+            en el siglo II a.C. Se cree que fue utilizado para predecir posiciones astronómicas y eclipses, mostrando
+            los primeros indicios de cálculos automatizados en la historia.</p>
+
+        <p>Durante la revolución industrial, surgieron máquinas más avanzadas, como la <a
+                href="https://es.wikipedia.org/wiki/M%C3%A1quina_anal%C3%ADtica" target="_blank"><strong>Máquina
+                    Analítica</strong></a> de Charles Babbage en el siglo XIX. Esta máquina teórica sentó las bases de
+            la computación moderna, y <a href="https://es.wikipedia.org/wiki/Ada_Lovelace" target="_blank"><strong>Ada
+                    Lovelace</strong></a>, colaboradora de Babbage, es reconocida como la primera programadora por su
+            trabajo en algoritmos diseñados para esta máquina.</p>
+
+        <p>En el siglo XX, la computación electrónica revolucionó la informática con
+            dispositivos como el <a href="https://es.wikipedia.org/wiki/ENIAC"
+                target="_blank"><strong>ENIAC</strong></a> (1945), considerado el primer ordenador de propósito general,
+            y el <a href="https://es.wikipedia.org/wiki/IBM_System/360" target="_blank"><strong>IBM 360</strong></a> en
+            la década de 1960, que marcó el comienzo de la informática empresarial moderna. Con el tiempo, la llegada
+            del <a href="https://es.wikipedia.org/wiki/Altair_8800" target="_blank"><strong>Altair 8800</strong></a> y
+            la <a href="https://es.wikipedia.org/wiki/Apple_I" target="_blank"><strong>Apple I</strong></a> en los años
+            70 impulsaron la era de la computación personal, acercando la informática a los hogares y sentando las bases
+            del mundo digital actual.</p>
+    </section>
+
+    <section>
+        <h2>Personajes Ilustres en la Informática</h2>
+        <ul>
+            <li><a href="https://es.wikipedia.org/wiki/Alan_Turing" target="_blank">Alan Turing</a> - Padre de la
+                computación moderna.</li>
+            <li><a href="https://es.wikipedia.org/wiki/Grace_Hopper" target="_blank">Grace Hopper</a> - Inventora del
+                primer compilador.</li>
+            <li><a href="https://es.wikipedia.org/wiki/Dennis_Ritchie" target="_blank">Dennis Ritchie</a> - Creador del
+                lenguaje C.</li>
+            <li><a href="https://es.wikipedia.org/wiki/Tim_Berners-Lee" target="_blank">Tim Berners-Lee</a> - Inventor
+                de la World Wide Web.</li>
         </ul>
-      </div>
-    </div>
-  </nav>
+    </section>
 
-  <!-- Tabla de flanes -->
-  <section class="container">
-    <h2 class="flan-title">🏆 Top #3 Flanes</h2>
-    <table class="table table-hover">
-      <thead>
-        <tr>
-          <th>Nombre</th>
-          <th>Sabor</th>
-          <th>Tiempo de compilación</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><a href="#" class="flan-link">Flan Overflow</a></td>
-          <td>Chocolate con error 404</td>
-          <td>15 ms</td>
-        </tr>
-        <tr>
-          <td><a href="#" class="flan-link">FlanScript</a></td>
-          <td>Vainilla con JavaScript derretido</td>
-          <td>30 ms</td>
-        </tr>
-        <tr>
-          <td><a href="#" class="flan-link">Flan++</a></td>
-          <td>Caramelo con punteros flotantes</td>
-          <td>10 ms</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
+    <section>
+        <h2>Conceptos Clave en Programación</h2>
+        <ol>
+            <li>Estructuras de Datos</li>
+            <li>Algoritmos</li>
+            <li>Compiladores</li>
+            <li>Bases de Datos</li>
+        </ol>
+    </section>
 
-  <!-- Carrusel de imágenes -->
-  <section id="flanCarousel" class="carousel slide" data-ride="carousel" aria-label="Galería de flanes">
-    <ol class="carousel-indicators">
-      <li data-target="#flanCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#flanCarousel" data-slide-to="1"></li>
-      <li data-target="#flanCarousel" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="item active">
-        <img src="img/f01.jpeg" class="img-responsive img-rounded" alt="Flan 1">
-        <div class="carousel-caption">
-          <h3>Flan Buffer Overflow</h3>
-          <p>Demasiado delicioso para manejar.</p>
-        </div>
-      </div>
-      <div class="item">
-        <img src="img/f02.jpeg" class="img-responsive img-rounded" alt="Flan 2">
-        <div class="carousel-caption">
-          <h3>Flan NullPointerException</h3>
-          <p>Un flan tan misterioso que desaparece al tocarlo.</p>
-        </div>
-      </div>
-      <div class="item">
-        <img src="img/f03.jpeg" class="img-responsive img-rounded" alt="Flan 3">
-        <div class="carousel-caption">
-          <h3>Flan Kernel Panic</h3>
-          <p>El postre definitivo para los amantes del caos.</p>
-        </div>
-      </div>
-    </div>
-    <a class="left carousel-control" href="#flanCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-    </a>
-    <a class="right carousel-control" href="#flanCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-    </a>
-  </section>
+    <section>
+        <h2>Tabla de Comparación</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Lenguaje</th>
+                    <th>Paradigma</th>
+                    <th>Año de Creación</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Python</td>
+                    <td>Multiparadigma</td>
+                    <td>1991</td>
+                </tr>
+                <tr>
+                    <td>Java</td>
+                    <td>Orientado a Objetos</td>
+                    <td>1995</td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>Procedimental</td>
+                    <td>1972</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Multiparadigma</td>
+                    <td>1995</td>
+                </tr>
+                <tr>
+                    <td>Ruby</td>
+                    <td>Orientado a Objetos</td>
+                    <td>1995</td>
+                </tr>
+                <tr>
+                    <td>Swift</td>
+                    <td>Multiparadigma</td>
+                    <td>2014</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
-  <!-- Formulario de contacto -->
-  <section class="container">
-    <h2 class="text-center">📧 Contáctanos</h2>
-    <form class="well">
-      <div class="form-group">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Introduce tu nombre">
-      </div>
-      <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" class="form-control" placeholder="Introduce tu email">
-      </div>
-      <div class="form-group">
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" class="form-control" rows="4" placeholder="Escribe tu mensaje"></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary btn-block">Enviar</button>
-    </form>
-  </section>
+    <h2>Imágenes Representativas Flexbox</h2>
+    <section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container text-center">
-      <p>&copy; 2025 Nuestra Web. Todos los derechos reservados.</p>
-      <div class="social-icons">
-        <a href="#" aria-label="Twitter"><span class="glyphicon glyphicon-globe"></span></a>
-        <a href="#" aria-label="Facebook"><span class="glyphicon glyphicon-thumbs-up"></span></a>
-        <a href="#" aria-label="Instagram"><span class="glyphicon glyphicon-camera"></span></a>
-      </div>
-    </div>
-  </footer>
+        <figure>
+            <img src="img/200px-Intel_4004.jpg" alt="Primer microprocesador Intel 4004">
+            <figcaption>El <strong>Intel 4004</strong> fue el primer microprocesador de la historia.</figcaption>
+        </figure>
 
-  <script>
-    // Modo oscuro
-    const toggleDarkModeButton = document.getElementById('toggle-dark-mode');
-    const body = document.body;
+        <figure>
+            <img src="img/Punch-card-blue.jpg" alt="Tarjeta perforada">
+            <figcaption>Las tarjetas perforadas fueron una de las primeras formas de almacenamiento de datos en
+                computación.</figcaption>
+        </figure>
 
-    if (localStorage.getItem('dark-mode') === 'enabled') {
-      body.classList.add('dark-mode');
-      toggleDarkModeButton.textContent = 'Modo Claro';
-    }
+        <figure>
+            <img src="img/Unix_history-simple.svg" alt="Historia de Unix">
+            <figcaption>Diagrama de la evolución de los sistemas Unix y Linux.</figcaption>
+        </figure>
 
-    toggleDarkModeButton.addEventListener('click', () => {
-      body.classList.toggle('dark-mode');
-      const mode = body.classList.contains('dark-mode') ? 'enabled' : 'disabled';
-      localStorage.setItem('dark-mode', mode);
-      toggleDarkModeButton.textContent = mode === 'enabled' ? 'Modo Claro' : 'Modo Oscuro';
-    });
-  </script>
+        <figure>
+            <img src="img/First_Computer_Bug,_1945.jpg" alt="Primer bug informático">
+            <figcaption>El primer "bug" informático registrado en 1945.</figcaption>
+        </figure>
+
+        <figure>
+            <img src="img/Arpanet_logical_map,_march_1977.png" alt="Mapa lógico de ARPANET 1977">
+            <figcaption>Mapa lógico de ARPANET en 1977, precursor de Internet.</figcaption>
+        </figure>
+
+        <figure>
+            <img src="img/Steve_Wozniak_by_Gage_Skidmore.jpg" alt="Steve Wozniak">
+            <figcaption>Steve Wozniak, cofundador de Apple y creador de la Apple I.</figcaption>
+        </figure>
+
+        <figure>
+            <img src="img/Grace_Hopper_and_UNIVAC.jpg" alt="Grace Hopper y UNIVAC">
+            <figcaption>Grace Hopper trabajando con el ordenador UNIVAC.</figcaption>
+        </figure>
+
+        <figure>
+            <img src="img/Altair_8800.jpg" alt="Altair 8800">
+            <figcaption>El Altair 8800 fue uno de los primeros ordenadores personales, muy popular entre los entusiastas
+                de la computación.</figcaption>
+        </figure>
+    </section>
+
+
+    <h2>Imágenes Representativas CSS Grid</h2>
+    <section>
+
+        <figure>
+            <img src="img/700px-Moore_Law_diagram_(2004).jpg" alt="Ley de Moore">
+            <figcaption>La <strong>Ley de Moore</strong> predice que el número de transistores en un chip se duplica aproximadamente cada dos años. <a href="https://es.wikipedia.org/wiki/Ley_de_Moore">[Wikipedia]</a></figcaption>
+        </figure>
+        
+        <figure>
+            <img src="img/Turing_Machine.jpg" alt="Máquina de Turing">
+            <figcaption>La <strong>Máquina de Turing</strong> es un modelo teórico de computación propuesto por Alan Turing. <a href="https://es.wikipedia.org/wiki/Máquina_de_Turing">[Wikipedia]</a></figcaption>
+        </figure>
+        
+        <figure>
+            <img src="img/Tux.svg.png" alt="Tux, la mascota de Linux">
+            <figcaption><strong>Tux</strong>, la icónica mascota del sistema operativo Linux. <a href="https://es.wikipedia.org/wiki/Tux">[Wikipedia]</a></figcaption>
+        </figure>
+        
+        <figure>
+            <img src="img/Raspberry_Pi_Board.jpg" alt="Raspberry Pi">
+            <figcaption>La <strong>Raspberry Pi</strong> es una computadora de bajo costo utilizada para educación y desarrollo. <a href="https://es.wikipedia.org/wiki/Raspberry_Pi">[Wikipedia]</a></figcaption>
+        </figure>
+        
+        <figure>
+            <img src="img/C_language_logo.png" alt="Lenguaje de programación C">
+            <figcaption>El <strong>lenguaje de programación C</strong> es uno de los más influyentes en la historia de la informática. <a href="https://es.wikipedia.org/wiki/C_(lenguaje_de_programación)">[Wikipedia]</a></figcaption>
+        </figure>
+        
+        <figure>
+            <img src="img/Internet_Protocol.png" alt="Protocolo TCP/IP">
+            <figcaption>El <strong>protocolo TCP/IP</strong> es la base de las comunicaciones en Internet. <a href="https://es.wikipedia.org/wiki/TCP/IP">[Wikipedia]</a></figcaption>
+        </figure>
+        
+        <figure>
+            <img src="img/MultiLayerNeuralNetworkBigger_english.png" alt="Red neuronal profunda">
+            <figcaption>Las <strong>redes neuronales profundas</strong> permiten avances en inteligencia artificial y aprendizaje automático. <a href="https://es.wikipedia.org/wiki/Aprendizaje_profundo">[Wikipedia]</a></figcaption>
+        </figure>
+        
+        <figure>
+            <img src="img/Git-Logo-2Color.svg" alt="Git">
+            <figcaption><strong>Git</strong> es un sistema de control de versiones ampliamente utilizado en desarrollo de software. <a href="https://es.wikipedia.org/wiki/Git">[Wikipedia]</a></figcaption>
+        </figure>
+        
+    </section>
+
 </body>
 
 </html>

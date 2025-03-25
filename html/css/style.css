@@ -1,148 +1,95 @@
-/* ========================= */
-/* Variables CSS             */
-/* ========================= */
-:root {
-  --color-primary: #e67e22;
-  --color-secondary: #d35400;
-  --color-accent: #ff4500;
-  --color-light: #fbe7c6;
-  --color-dark: #1a1a1a;
-  --color-text: #555;
-  --color-white: #ffffff;
-  --color-black: #000000;
-
-  --shadow-light: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  --shadow-medium: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  --shadow-dark: 0px 6px 12px rgba(0, 0, 0, 0.5);
-
-  --transition-fast: 0.2s ease;
-  --transition-medium: 0.3s ease;
-}
-
-/* ========================= */
-/* Estilos generales         */
-/* ========================= */
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-  background-color: var(--color-white);
-  color: var(--color-text);
-  transition: background-color var(--transition-medium), color var(--transition-medium);
-}
-
-a {
-  text-decoration: none;
-  transition: color var(--transition-medium);
-}
-
-img {
-  max-width: 100%;
-  display: block;
-  border-radius: 10px;
-  box-shadow: var(--shadow-light);
-}
-
-/* ========================= */
-/* Sección principal         */
-/* ========================= */
+/* Fondo degradado para la sección principal */
 .jumbotron-gradient {
-  background: linear-gradient(to right, #f9d976, var(--color-primary));
-  color: var(--color-white);
+  background: linear-gradient(to right, #f9d976, #f39c12); /* Colores cálidos como el caramelo */
+  color: white;
   padding: 50px;
   border-radius: 10px;
-  box-shadow: var(--shadow-medium);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* ========================= */
-/* Enlaces decorativos       */
-/* ========================= */
+/* Enlaces decorativos */
 .flan-link {
-  color: #d2691e;
+  text-decoration: none;
+  color: #d2691e; /* Color caramelo */
   font-weight: bold;
-  transition: color var(--transition-medium);
+  transition: color 0.3s ease-in-out;
 }
 
 .flan-link:hover {
-  color: var(--color-accent);
+  color: #ff4500; /* Color más vibrante al pasar el ratón */
   text-decoration: underline;
 }
 
-/* ========================= */
-/* Títulos principales       */
-/* ========================= */
+/* Títulos principales */
 .flan-title {
   font-size: 2rem;
   font-weight: bold;
-  color: var(--color-primary);
+  color: #e67e22; /* Color cálido */
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;
   padding: 10px 0;
-  border-bottom: 3px solid #e74c3c;
-  background-color: var(--color-light);
+  border-bottom: 3px solid #e74c3c; /* Línea decorativa */
+  background-color: #fbe7c6; /* Fondo suave */
   border-radius: 5px;
-  box-shadow: var(--shadow-light);
-  transition: transform var(--transition-medium), color var(--transition-medium);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .flan-title:hover {
-  color: var(--color-secondary);
-  transform: scale(1.05);
+  color: #d35400; /* Un tono más oscuro */
+  transform: scale(1.05); /* Efecto de crecimiento */
+  transition: all 0.3s ease-in-out;
 }
 
-/* ========================= */
-/* Imágenes responsivas      */
-/* ========================= */
+/* Imágenes responsivas */
 .img-responsive {
+  display: block;
   margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* ========================= */
-/* Títulos secundarios       */
-/* ========================= */
+/* Títulos secundarios */
 h3 {
   font-size: 1.5rem;
   font-weight: bold;
-  color: var(--color-secondary);
+  color: #d35400; /* Tono cálido */
   text-align: center;
-  background-color: var(--color-light);
+  background-color: #fbe7c6; /* Fondo suave */
   padding: 10px 15px;
   border-radius: 5px;
   margin-bottom: 15px;
-  box-shadow: var(--shadow-light);
-  transition: transform var(--transition-medium), background-color var(--transition-medium);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 h3:hover {
-  background-color: #f8d9a0;
-  color: #e74c3c;
+  background-color: #f8d9a0; /* Fondo más cálido */
+  color: #e74c3c; /* Cambia el color del texto */
   transform: scale(1.02);
+  transition: all 0.3s ease-in-out;
 }
 
-/* ========================= */
-/* Contenedor de flanes      */
-/* ========================= */
+/* Contenedor de cada flan */
 .flan-box {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 400px;
+  height: 400px; /* Altura fija para uniformidad */
   padding: 15px;
   border: 1px solid #ddd;
   border-radius: 8px;
-  background-color: #fffaf0;
-  box-shadow: var(--shadow-light);
+  background-color: #fffaf0; /* Fondo suave */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  transition: transform var(--transition-medium), box-shadow var(--transition-medium);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .flan-box:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-medium);
+  transform: translateY(-5px); /* Efecto de elevación */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
 }
 
+/* Imágenes de los flanes */
 .flan-box img {
   width: 100%;
   height: 200px; /* Altura fija */
@@ -150,146 +97,185 @@ h3:hover {
   border-radius: 10px;
 }
 
+/* Descripción de cada flan */
+.flan-desc {
+  flex-grow: 1;
+  font-size: 1rem;
+  color: #555;
+  margin: 10px 0;
+  text-align: justify;
+}
 
-/* ========================= */
-/* Botón de compra           */
-/* ========================= */
+/* Botón de compra */
 .btn-warning {
   font-size: 1.2rem;
   font-weight: bold;
-  color: var(--color-white);
-  background-color: var(--color-primary);
+  color: white;
+  background-color: #e67e22; /* Color caramelo */
   border: none;
   border-radius: 5px;
   padding: 10px 15px;
-  transition: background-color var(--transition-medium), transform var(--transition-fast);
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .btn-warning:hover {
-  background-color: var(--color-secondary);
-  transform: scale(1.05);
+  background-color: #d35400; /* Tono más oscuro */
+  transform: scale(1.05); /* Efecto de crecimiento */
 }
 
-/* ========================= */
-/* Paginación                */
-/* ========================= */
+/* Paginación */
 .pagination {
   display: inline-block;
   margin: 20px auto;
 }
 
 .pagination > li > a {
-  color: var(--color-primary);
-  background-color: var(--color-white);
-  border: 1px solid var(--color-primary);
+  color: #e67e22; /* Color caramelo */
+  background-color: #fff;
+  border: 1px solid #e67e22;
   padding: 8px 12px;
   border-radius: 5px;
-  transition: background-color var(--transition-medium), color var(--transition-medium);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .pagination > li.active > a {
-  background-color: var(--color-primary);
-  border-color: var(--color-primary);
-  color: var(--color-white);
+  background-color: #e67e22;
+  border-color: #e67e22;
+  color: white;
 }
 
 .pagination > li > a:hover {
-  background-color: var(--color-secondary);
-  color: var(--color-white);
+  background-color: #d35400; /* Tono más oscuro */
+  color: white;
 }
 
-/* ========================= */
-/* Footer                    */
-/* ========================= */
+/* Footer */
 .footer {
   background-color: #222;
-  color: var(--color-white);
+  color: #f8f9fa;
   padding: 20px 0;
   margin-top: 30px;
   text-align: center;
 }
 
-.footer .social-icons a {
-  color: var(--color-white);
-  font-size: 20px;
-  margin: 0 10px;
-  transition: color var(--transition-medium);
+.footer address {
+  font-style: normal;
+  margin-bottom: 10px;
 }
 
-.footer .social-icons a:hover {
-  color: var(--color-accent);
-}
-
-/* ========================= */
-/* Modo oscuro               */
-/* ========================= */
-body.dark-mode {
-  background-color: var(--color-black);
-  color: #e0e0e0;
-}
-
-.dark-mode .jumbotron-gradient {
-  background: linear-gradient(to right, var(--color-dark), #333);
-  box-shadow: var(--shadow-dark);
-}
-
-.dark-mode .flan-box {
-  background-color: var(--color-dark);
-  border-color: #333;
-  color: #e0e0e0;
-}
-
-.dark-mode .btn-warning {
-  background-color: #800080;
-  border: 1px solid #800080;
-}
-
-.dark-mode .btn-warning:hover {
-  background-color: #9932cc;
-}
-
-.dark-mode h3 {
-  background-color: #292929;
-  color: #800080;
-}
-
-.dark-mode h3:hover {
-  background-color: #333333;
-  color: #9932cc;
-}
-
-.dark-mode .footer {
-  background-color: var(--color-dark);
-}
-
-.dark-mode .pagination > li > a {
-  background-color: #292929;
-  border: 1px solid #444;
-}
-
-.dark-mode .pagination > li.active > a {
-  background-color: #800080;
-}
-
-/* Mejoras generales */
-.carousel-inner img {
-  max-height: 400px;
-  object-fit: cover;
-}
-
-.footer {
-  background-color: #222;
-  color: var(--color-white);
-  padding: 20px;
+.footer .social-icons {
   text-align: center;
 }
 
-.social-icons a {
+.footer .social-icons a {
+  display: inline-block;
+  color: #f8f9fa;
+  font-size: 20px;
   margin: 0 10px;
-  color: var(--color-white);
-  transition: color var(--transition-medium);
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-.social-icons a:hover {
-  color: var(--color-accent);
+.footer .social-icons a:hover {
+  color: #ff9800; /* Color cálido */
+}
+
+
+
+
+/* Modo oscuro */
+body.dark-mode {
+  background-color: #000000; /* Fondo negro */
+  color: #e0e0e0; /* Texto claro */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+.dark-mode .navbar {
+  background-color: #1a1a1a; /* Fondo negro para la barra de navegación */
+  border-color: #333;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Sombra más pronunciada */
+}
+
+.dark-mode .navbar-default .navbar-nav > li > a {
+  color: #e0e0e0; /* Texto claro en la barra de navegación */
+}
+
+.dark-mode .jumbotron-gradient {
+  background: linear-gradient(to right, #1a1a1a, #333); /* Fondo degradado oscuro */
+  color: #e0e0e0;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra más pronunciada */
+}
+
+.dark-mode .flan-box {
+  background-color: #1a1a1a; /* Fondo negro para los flanes */
+  border-color: #333;
+  color: #e0e0e0;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+.dark-mode .flan-box:hover {
+  background-color: #292929; /* Fondo ligeramente más claro al pasar el ratón */
+  box-shadow: 0px 6px 12px rgba(255, 255, 255, 0.1); /* Sombra clara */
+}
+
+.dark-mode .flan-box img {
+  border: 2px solid #444; /* Borde para destacar las imágenes */
+}
+
+.dark-mode .btn-warning {
+  background-color: #800080; /* Botón morado */
+  color: #ffffff;
+  border: 1px solid #800080;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.dark-mode .btn-warning:hover {
+  background-color: #9932cc; /* Botón morado más claro al pasar el ratón */
+  color: #ffffff;
+  transform: scale(1.1); /* Efecto de crecimiento */
+}
+
+.dark-mode h3 {
+  background-color: #292929; /* Fondo oscuro para los títulos secundarios */
+  color: #800080; /* Morado para los títulos */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra más pronunciada */
+}
+
+.dark-mode h3:hover {
+  background-color: #333333; /* Fondo más oscuro al pasar el ratón */
+  color: #9932cc; /* Morado más claro */
+}
+
+.dark-mode .footer {
+  background-color: #1a1a1a; /* Fondo negro para el footer */
+  color: #e0e0e0;
+  border-top: 1px solid #333;
+  padding: 20px 0;
+}
+
+.dark-mode .footer .social-icons a {
+  color: #e0e0e0;
+  transition: color 0.3s ease;
+}
+
+.dark-mode .footer .social-icons a:hover {
+  color: #9932cc; /* Morado cálido al pasar el ratón */
+}
+
+.dark-mode .pagination > li > a {
+  color: #e0e0e0; /* Texto claro */
+  background-color: #292929; /* Fondo oscuro */
+  border: 1px solid #444;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode .pagination > li.active > a {
+  background-color: #800080; /* Fondo morado para la página activa */
+  border-color: #800080;
+  color: #ffffff;
+}
+
+.dark-mode .pagination > li > a:hover {
+  background-color: #444; /* Fondo más claro al pasar el ratón */
+  color: #9932cc; /* Morado cálido */
 }
