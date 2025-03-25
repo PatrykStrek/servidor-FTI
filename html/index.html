@@ -16,480 +16,157 @@
 </head>
 
 <body>
-  <!-- Jumbotron -->
-  <div class="jumbotron jumbotron-gradient text-center ">
-    <h1>🍮 nuestra web</h1>
-    <p>La mejor tienda de flanes de la red</p>
-</div>
+  <!-- Header -->
+  <header>
+    <div class="jumbotron jumbotron-gradient text-center">
+      <h1>🍮 Nuestra Web</h1>
+      <p>La mejor tienda de flanes de la red</p>
+    </div>
+  </header>
 
   <!-- Navbar -->
   <nav class="navbar navbar-default">
     <div class="container-fluid">
-        <!-- Botón para móviles -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">🍮 nuestra web</a>
-        </div>
-        <!-- Elementos del menú -->
-        <div class="collapse navbar-collapse" id="navbar-menu">
-            <ul class="nav navbar-nav list-inline">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Flanes</a></li>
-                <li><a href="#">Recetas</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li>
-                  <button id="toggle-dark-mode" class="btn btn-default navbar-btn">Modo Oscuro</button>
-                </li>
-            </ul>
-        </div>
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">🍮 Nuestra Web</a>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar-menu">
+        <ul class="nav navbar-nav">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Flanes</a></li>
+          <li><a href="#">Recetas</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li>
+            <button id="toggle-dark-mode" class="btn btn-default navbar-btn">Modo Oscuro</button>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 
-<script>
-  // Selecciona el botón y el cuerpo del documento
-  const toggleDarkModeButton = document.getElementById('toggle-dark-mode');
-  const body = document.body;
-
-  // Verifica si el usuario ya tiene una preferencia guardada
-  if (localStorage.getItem('dark-mode') === 'enabled') {
-      body.classList.add('dark-mode');
-      toggleDarkModeButton.textContent = 'Modo Claro';
-  }
-
-  // Alterna entre modo oscuro y claro
-  toggleDarkModeButton.addEventListener('click', () => {
-      if (body.classList.contains('dark-mode')) {
-          body.classList.remove('dark-mode');
-          toggleDarkModeButton.textContent = 'Modo Oscuro';
-          localStorage.setItem('dark-mode', 'disabled');
-      } else {
-          body.classList.add('dark-mode');
-          toggleDarkModeButton.textContent = 'Modo Claro';
-          localStorage.setItem('dark-mode', 'enabled');
-      }
-  });
-</script>
-
   <!-- Tabla de flanes -->
-  <h2 class="flan-title">🏆 Top #3 Flanes</h2>
-  <table class="table table-hover">
-    <thead>
-      <tr>
-        <th>Nombre</th>
-        <th>Sabor</th>
-        <th>Tiempo de compilación</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a href="#" class="flan-link">Flan Overflow</a></td>
-        <td>Chocolate con error 404</td>
-        <td>15 ms</td>
-      </tr>
-      <tr>
-        <td><a href="#" class="flan-link">FlanScript</a></td>
-        <td>Vainilla con JavaScript derretido</td>
-        <td>30 ms</td>
-      </tr>
-      <tr>
-        <td><a href="#" class="flan-link">Flan++</a></td>
-        <td>Caramelo con punteros flotantes</td>
-        <td>10 ms</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <div class="container">
-    <h2 class="flan-title">Receta para hacer tu flan.</h2>
-    <div class="row">
-        <!-- Lista de ingredientes -->
-        <div class="col-lg-3 col-md-6 col-sm-12">
-            <h3 class="text-center">Ingredientes</h3>
-            <ul class="list-unstyled">
-                <li><span class="glyphicon glyphicon-ok"></span> 1 GB de azúcar</li>
-                <li><span class="glyphicon glyphicon-ok"></span> 500 MB de leche condensada</li>
-                <li><span class="glyphicon glyphicon-ok"></span> 256 KB de esencia de vainilla</li>
-                <li><span class="glyphicon glyphicon-ok"></span> 4 huevos de silicio</li>
-                <li><span class="glyphicon glyphicon-ok"></span> Un splash de código bien indentado</li>
-            </ul>
-        </div>
-        <!-- Receta del flan -->
-        <div class="col-lg-5 col-md-6 col-sm-12">
-            <h3 class="text-center">Instrucciones</h3>
-            <ol class="list-group">
-                <li class="list-group-item">Compila los huevos con la leche condensada.</li>
-                <li class="list-group-item">Depura el caramelo en una sartén hasta que se ejecute sin errores.</li>
-                <li class="list-group-item">Inserta el código de la mezcla en un molde.</li>
-                <li class="list-group-item">Corre el programa a 180°C en el horno durante 40 minutos.</li>
-                <li class="list-group-item">Haz un push al plato y disfruta.</li>
-            </ol>
-        </div>
-        <!-- Imagen del flan -->
-        <div class="col-lg-4 col-md-12 col-sm-12">
-            <h3 class="text-center">Resultado</h3>
-            <img src="img/f01.jpeg" alt="Delicioso flan" class="img-responsive img-rounded">
-        </div>
-    </div>
-</div>
-
-  <!-- Sección de flanes en venta con paginación -->
-  <div class="container">
-    <!-- Título centrado de la sección -->
-    <h2 class="flan-title-venta">🍮 Flanes en Venta</h2>
-    
-    <div class="row">
-      <!-- Flan 1 -->
-      <div class="col-lg-3 col-md-4 col-sm-6 flan-item">
-        <div class="flan-box">
-          <img src="img/f02.jpeg" alt="Flan de Algoritmo" class="img-responsive">
-          <h3 class="text-center">Flan de Algoritmo</h3>
-          <p class="flan-desc">Un flan tan optimizado que se cocina en O(n log n).</p>
-          <button class="btn btn-warning btn-block">Comprar $3.14</button>
-        </div>
-      </div>
-  
-      <!-- Flan 2 -->
-      <div class="col-lg-3 col-md-4 col-sm-6 flan-item">
-        <div class="flan-box">
-          <img src="img/f03.jpeg" alt="Flan Buffer Overflow" class="img-responsive">
-          <h3 class="text-center">Flan Buffer Overflow</h3>
-          <p class="flan-desc">Este flan tiene tanta crema que si lo sirves en un plato pequeño, desbordará y se comerá la memoria de otros postres cercanos.</p>
-          <button class="btn btn-warning btn-block">Comprar $3.14</button>
-        </div>
-      </div>
-  
-      <!-- Flan 3 -->
-      <div class="col-lg-3 col-md-4 col-sm-6 flan-item">
-        <div class="flan-box">
-          <img src="img/f04.jpeg" alt="Flan NullPointerException" class="img-responsive">
-          <h3 class="text-center">Flan NullPointerException</h3>
-          <p class="flan-desc">Un flan tan misterioso que cuando intentas comerlo, la cuchara atraviesa el aire porque simplemente no está ahí.</p>
-          <button class="btn btn-warning btn-block">Comprar $3.14</button>
-        </div>
-      </div>
-
-      <!-- Flan 4 -->
-      <div class="col-lg-3 col-md-4 col-sm-6 flan-item">
-        <div class="flan-box">
-          <img src="img/f05.jpeg" alt="Flan Segmentation Fault" class="img-responsive">
-          <h3 class="text-center">Flan Segmentation Fault</h3>
-          <p class="flan-desc">Este flan viene partido en segmentos y si intentas acceder a uno que no te pertenece... el postre colapsa.</p>
-          <button class="btn btn-warning btn-block">Comprar $3.14</button>
-        </div>
-      </div>
-
-      <!-- Flan  -->
-      <div class="col-lg-3 col-md-4 col-sm-6 flan-item">
-        <div class="flan-box">
-          <img src="img/f06.jpeg" alt="Flan Stack Overflow" class="img-responsive">
-          <h3 class="text-center">Flan Stack Overflow</h3>
-          <p class="flan-desc">Un flan con tantas capas de caramelo que al final solo terminas preguntándole a internet cómo comértelo.</p>
-          <button class="btn btn-warning btn-block">Comprar $3.14</button>
-        </div>
-      </div>
-
-      <!-- Flan 7 -->
-      <div class="col-lg-3 col-md-4 col-sm-6 flan-item">
-        <div class="flan-box">
-          <img src="img/f07.jpeg" alt="Flan Kernel Panic" class="img-responsive">
-          <h3 class="text-center">Flan Kernel Panic</h3>
-          <p class="flan-desc">El postre definitivo para los amantes del caos: un flan que de repente se congela y muestra un error en tu cerebro.</p>
-          <button class="btn btn-warning btn-block">Comprar $3.14</button>
-        </div>
-      </div>
-      
-      <!-- Flan 8 -->
-      <div class="col-lg-3 col-md-4 col-sm-6 flan-item">
-        <div class="flan-box">
-          <img src="img/f08.jpeg" alt="Flan Deadlock" class="img-responsive">
-          <h3 class="text-center">Flan Deadlock</h3>
-          <p class="flan-desc">Si intentas comer este flan con alguien más, ambos se quedarán esperando eternamente a que el otro dé el primer bocado.</p>
-          <button class="btn btn-warning btn-block">Comprar $3.14</button>
-        </div>
-      </div>
-      
-      <!-- Flan 9 -->
-      <div class="col-lg-3 col-md-4 col-sm-6 flan-item">
-        <div class="flan-box">
-          <img src="img/f09.jpeg" alt="Flan Blue Screen" class="img-responsive">
-          <h3 class="text-center">Flan Blue Screen</h3>
-          <p class="flan-desc">Un flan tan inestable que cada vez que lo tocas, se cae y necesitas reiniciar el postre desde cero.</p>
-          <button class="btn btn-warning btn-block">Comprar $3.14</button>
-        </div>
-      </div>
-      
-      <!-- Flan 10 -->
-      <div class="col-lg-3 col-md-4 col-sm-6 flan-item">
-        <div class="flan-box">
-          <img src="img/f10.jpeg" alt="Flan DDoS" class="img-responsive">
-          <h3 class="text-center">Flan DDoS</h3>
-          <p class="flan-desc">Un flan tan popular que si lo sacas en la mesa, todo el mundo intenta comérselo al mismo tiempo y el sistema colapsa.</p>
-          <button class="btn btn-warning btn-block">Comprar $3.14</button>
-        </div>
-      </div>
-      
-      <!-- Flan 11 -->
-      <div class="col-lg-3 col-md-4 col-sm-6 flan-item">
-        <div class="flan-box">
-          <img src="img/f11.jpeg" alt="Flan Git Merge Conflict" class="img-responsive">
-          <h3 class="text-center">Flan Git Merge Conflict</h3>
-          <p class="flan-desc">Un postre que viene con diferentes versiones y cuando intentas juntarlas, terminas con una abominación incomestible.</p>
-          <button class="btn btn-warning btn-block">Comprar $3.14</button>
-        </div>
-      </div>
-      
-      <!-- Flan 12 -->
-      <div class="col-lg-3 col-md-4 col-sm-6 flan-item">
-        <div class="flan-box">
-          <img src="img/f12.jpeg" alt="Flan 404 Not Found" class="img-responsive">
-          <h3 class="text-center">Flan 404 Not Found</h3>
-          <p class="flan-desc">Pides un flan, pero cuando llega la hora de comerlo, no está en el plato. El camarero solo dice: "Error 404".</p>
-          <button class="btn btn-warning btn-block">Comprar $3.14</button>
-        </div>
-      </div>
-      
-      <!-- Flan 13 -->
-      <div class="col-lg-3 col-md-4 col-sm-6 flan-item">
-        <div class="flan-box">
-          <img src="img/f13.jpeg" alt="Flan Machine Learning" class="img-responsive">
-          <h3 class="text-center">Flan Machine Learning</h3>
-          <p class="flan-desc">Un flan que aprende de cada bocado que le das. Al final, predice exactamente cómo lo quieres antes de que lo sepas.</p>
-          <button class="btn btn-warning btn-block">Comprar $3.14</button>
-        </div>
-      </div>
-  
-      <!-- Repetir estructura para los demás flanes... -->
-    </div>
-  </div>
-<!--
-  
-
-  <div>
-    <img src="img/f07.jpeg" alt="Flan Kernel Panic">
-    <h2>Flan Kernel Panic</h2>
-    <p>El postre definitivo para los amantes del caos: un flan que de repente se congela y muestra un error en tu
-      cerebro.</p>
-    <p>Precio: $3.14</p>
-  </div>
-
-  <div>
-    <img src="img/f08.jpeg" alt="Flan Deadlock">
-    <h2>Flan Deadlock</h2>
-    <p>Si intentas comer este flan con alguien más, ambos se quedarán esperando eternamente a que el otro dé el primer
-      bocado.</p>
-    <p>Precio: $3.14</p>
-  </div>
-
-  <div>
-    <img src="img/f09.jpeg" alt="Flan Blue Screen">
-    <h2>Flan Blue Screen</h2>
-    <p>Un flan tan inestable que cada vez que lo tocas, se cae y necesitas reiniciar el postre desde cero.</p>
-    <p>Precio: $3.14</p>
-  </div>
-
-  <div>
-    <img src="img/f10.jpeg" alt="Flan DDoS">
-    <h2>Flan DDoS</h2>
-    <p>Un flan tan popular que si lo sacas en la mesa, todo el mundo intenta comérselo al mismo tiempo y el sistema
-      colapsa.</p>
-    <p>Precio: $3.14</p>
-  </div>
-
-  <div>
-    <img src="img/f11.jpeg" alt="Flan Git Merge Conflict">
-    <h2>Flan Git Merge Conflict</h2>
-    <p>Un postre que viene con diferentes versiones y cuando intentas juntarlas, terminas con una abominación
-      incomestible.</p>
-    <p>Precio: $3.14</p>
-  </div>
-
-  <div>
-    <img src="img/f12.jpeg" alt="Flan 404 Not Found">
-    <h2>Flan 404 Not Found</h2>
-    <p>Pides un flan, pero cuando llega la hora de comerlo, no está en el plato. El camarero solo dice: "Error 404".</p>
-    <p>Precio: $3.14</p>
-  </div>
-
-  <div>
-    <img src="img/f13.jpeg" alt="Flan Machine Learning">
-    <h2>Flan Machine Learning</h2>
-    <p>Un flan que aprende de cada bocado que le das. Al final, predice exactamente cómo lo quieres antes de que lo
-      sepas.</p>
-    <p>Precio: $3.14</p>
-  </div> -->
-
-  <!-- Paginación -->
-  <!-- Paginación centrada con Bootstrap -->
-<nav aria-label="Page navigation" class="text-center">
-  <ul class="pagination pagination-centered">
-    <li>
-      <a href="#" aria-label="Previous">
-        <span aria-hidden="true">&laquo;</span>
-      </a>
-    </li>
-    <li class="active"><a href="#">1</a></li>
-    <li><a href="#">2</a></li>
-    <li><a href="#">3</a></li>
-    <li>
-      <a href="#" aria-label="Next">
-        <span aria-hidden="true">&raquo;</span>
-      </a>
-    </li>
-  </ul>
-</nav>
-
-<!-- Separación visual -->
-<hr>
-
-<!-- Formulario de contacto -->
-<h2 class="text-center">📧 Contáctanos</h2>
-<form class="well">
-  <div class="form-group">
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Introduce tu nombre">
-  </div>
-
-  <div class="form-group">
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" class="form-control" placeholder="Introduce tu email">
-  </div>
-
-  <div class="form-group">
-    <label for="mensaje">Mensaje:</label>
-    <textarea id="mensaje" name="mensaje" class="form-control" rows="4" placeholder="Escribe tu mensaje"></textarea>
-  </div>
-
-  <button type="submit" class="btn btn-primary btn-block">Enviar</button>
-</form>
+  <section class="container">
+    <h2 class="flan-title">🏆 Top #3 Flanes</h2>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Sabor</th>
+          <th>Tiempo de compilación</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="#" class="flan-link">Flan Overflow</a></td>
+          <td>Chocolate con error 404</td>
+          <td>15 ms</td>
+        </tr>
+        <tr>
+          <td><a href="#" class="flan-link">FlanScript</a></td>
+          <td>Vainilla con JavaScript derretido</td>
+          <td>30 ms</td>
+        </tr>
+        <tr>
+          <td><a href="#" class="flan-link">Flan++</a></td>
+          <td>Caramelo con punteros flotantes</td>
+          <td>10 ms</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
 
   <!-- Carrusel de imágenes -->
-<div id="flanCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicadores -->
-  <ol class="carousel-indicators">
-    <li data-target="#flanCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#flanCarousel" data-slide-to="1"></li>
-    <li data-target="#flanCarousel" data-slide-to="2"></li>
-    <li data-target="#flanCarousel" data-slide-to="3"></li>
-    <li data-target="#flanCarousel" data-slide-to="4"></li>
-  </ol>
+  <section id="flanCarousel" class="carousel slide" data-ride="carousel" aria-label="Galería de flanes">
+    <ol class="carousel-indicators">
+      <li data-target="#flanCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#flanCarousel" data-slide-to="1"></li>
+      <li data-target="#flanCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="img/f01.jpeg" class="img-responsive img-rounded" alt="Flan 1">
+        <div class="carousel-caption">
+          <h3>Flan Buffer Overflow</h3>
+          <p>Demasiado delicioso para manejar.</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="img/f02.jpeg" class="img-responsive img-rounded" alt="Flan 2">
+        <div class="carousel-caption">
+          <h3>Flan NullPointerException</h3>
+          <p>Un flan tan misterioso que desaparece al tocarlo.</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="img/f03.jpeg" class="img-responsive img-rounded" alt="Flan 3">
+        <div class="carousel-caption">
+          <h3>Flan Kernel Panic</h3>
+          <p>El postre definitivo para los amantes del caos.</p>
+        </div>
+      </div>
+    </div>
+    <a class="left carousel-control" href="#flanCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#flanCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+  </section>
 
-  <!-- Contenedor de imágenes -->
-  <div class="carousel-inner">
-    <div class="item active">
-      <div class="row">
-        <div class="col-xs-4">
-          <img src="img/f01.jpeg" class="img-responsive img-rounded" alt="Flan 1">
-        </div>
-        <div class="col-xs-4">
-          <div class="item">
-            <img src="img/f02.jpeg" alt="Flan 2">
-            <div class="carousel-caption">
-              <h3>Flan Buffer Overflow</h3>
-              <p>Demasiado delicioso para manejar.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-4">
-          <img src="img/f03.jpeg" class="img-responsive img-rounded" alt="Flan 3">
-        </div>
+  <!-- Formulario de contacto -->
+  <section class="container">
+    <h2 class="text-center">📧 Contáctanos</h2>
+    <form class="well">
+      <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Introduce tu nombre">
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" class="form-control" placeholder="Introduce tu email">
+      </div>
+      <div class="form-group">
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" class="form-control" rows="4" placeholder="Escribe tu mensaje"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container text-center">
+      <p>&copy; 2025 Nuestra Web. Todos los derechos reservados.</p>
+      <div class="social-icons">
+        <a href="#" aria-label="Twitter"><span class="glyphicon glyphicon-globe"></span></a>
+        <a href="#" aria-label="Facebook"><span class="glyphicon glyphicon-thumbs-up"></span></a>
+        <a href="#" aria-label="Instagram"><span class="glyphicon glyphicon-camera"></span></a>
       </div>
     </div>
-    <div class="item">
-      <div class="row">
-        <div class="col-xs-4">
-          <img src="img/f04.jpeg" class="img-responsive img-rounded" alt="Flan 4">
-        </div>
-        <div class="col-xs-4">
-          <img src="img/f05.jpeg" class="img-responsive img-rounded" alt="Flan 5">
-        </div>
-        <div class="col-xs-4">
-          <img src="img/f06.jpeg" class="img-responsive img-rounded" alt="Flan 6">
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <div class="row">
-        <div class="col-xs-4">
-          <img src="img/f07.jpeg" class="img-responsive img-rounded" alt="Flan 7">
-        </div>
-        <div class="col-xs-4">
-          <img src="img/f08.jpeg" class="img-responsive img-rounded" alt="Flan 8">
-        </div>
-        <div class="col-xs-4">
-          <img src="img/f09.jpeg" class="img-responsive img-rounded" alt="Flan 9">
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <div class="row">
-        <div class="col-xs-4">
-          <img src="img/f10.jpeg" class="img-responsive img-rounded" alt="Flan 10">
-        </div>
-        <div class="col-xs-4">
-          <img src="img/f11.jpeg" class="img-responsive img-rounded" alt="Flan 11">
-        </div>
-        <div class="col-xs-4">
-          <img src="img/f12.jpeg" class="img-responsive img-rounded" alt="Flan 12">
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <div class="row">
-        <div class="col-xs-4">
-          <img src="img/f13.jpeg" class="img-responsive img-rounded" alt="Flan 13">
-        </div>
-        <div class="col-xs-4">
-          <img src="img/f14.jpeg" class="img-responsive img-rounded" alt="Flan 14">
-        </div>
-        <div class="col-xs-4">
-          <img src="img/f15.jpeg" class="img-responsive img-rounded" alt="Flan 15">
-        </div>
-      </div>
-    </div>
-  </div>
+  </footer>
 
   <script>
-  $('#flanCarousel').carousel({
-    interval: 3000 // Cambia cada 3 segundos
-  });
+    // Modo oscuro
+    const toggleDarkModeButton = document.getElementById('toggle-dark-mode');
+    const body = document.body;
 
-  $('#flanCarousel').carousel('pause');
+    if (localStorage.getItem('dark-mode') === 'enabled') {
+      body.classList.add('dark-mode');
+      toggleDarkModeButton.textContent = 'Modo Claro';
+    }
+
+    toggleDarkModeButton.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+      const mode = body.classList.contains('dark-mode') ? 'enabled' : 'disabled';
+      localStorage.setItem('dark-mode', mode);
+      toggleDarkModeButton.textContent = mode === 'enabled' ? 'Modo Claro' : 'Modo Oscuro';
+    });
   </script>
-
-  <!-- Controles de navegación -->
-  <a class="left carousel-control" href="#flanCarousel" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-  </a>
-  <a class="right carousel-control" href="#flanCarousel" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-  </a>
-</div>
-
-<!-- Footer -->
-<footer class="footer">
-  <div class="row">
-      <div class="col-xs-12 text-right">
-      <address>
-          <strong>nuestra web</strong><br>
-          Calle del Flan 404, Servidor Remoto<br>
-          <span class="glyphicon glyphicon-envelope"></span> contacto@myweb.com<br>
-          <span class="glyphicon glyphicon-earphone"></span> +34 123 456 789
-      </address>
-      <div class="social-icons">
-          <a href="#" class="btn btn-social-icon btn-twitter"><i class="glyphicon glyphicon-globe"></i></a>
-          <a href="#" class="btn btn-social-icon btn-facebook"><i class="glyphicon glyphicon-thumbs-up"></i></a>
-          <a href="#" class="btn btn-social-icon btn-instagram"><i class="glyphicon glyphicon-camera"></i></a>
-      </div>
-      </div>
-  </div>
-</footer>
-
-
-
 </body>
 
 </html>

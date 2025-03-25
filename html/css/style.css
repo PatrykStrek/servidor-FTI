@@ -270,3 +270,26 @@ body.dark-mode {
 .dark-mode .pagination > li.active > a {
   background-color: #800080;
 }
+
+/* Mejoras generales */
+.carousel-inner img {
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.footer {
+  background-color: #222;
+  color: var(--color-white);
+  padding: 20px;
+  text-align: center;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: var(--color-white);
+  transition: color var(--transition-medium);
+}
+
+.social-icons a:hover {
+  color: var(--color-accent);
+}
