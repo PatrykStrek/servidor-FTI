@@ -1,0 +1,269 @@
+/* ========================= */
+/* Variables CSS             */
+/* ========================= */
+:root {
+  --color-primary: #e67e22;
+  --color-secondary: #d35400;
+  --color-accent: #ff4500;
+  --color-light: #fbe7c6;
+  --color-dark: #1a1a1a;
+  --color-text: #555;
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  --shadow-light: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  --shadow-medium: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  --shadow-dark: 0px 6px 12px rgba(0, 0, 0, 0.5);
+
+  --transition-fast: 0.2s ease;
+  --transition-medium: 0.3s ease;
+}
+
+/* ========================= */
+/* Estilos generales         */
+/* ========================= */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-white);
+  color: var(--color-text);
+  transition: background-color var(--transition-medium), color var(--transition-medium);
+}
+
+a {
+  text-decoration: none;
+  transition: color var(--transition-medium);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 10px;
+  box-shadow: var(--shadow-light);
+}
+
+/* ========================= */
+/* Sección principal         */
+/* ========================= */
+.jumbotron-gradient {
+  background: linear-gradient(to right, #f9d976, var(--color-primary));
+  color: var(--color-white);
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: var(--shadow-medium);
+}
+
+/* ========================= */
+/* Enlaces decorativos       */
+/* ========================= */
+.flan-link {
+  color: #d2691e;
+  font-weight: bold;
+  transition: color var(--transition-medium);
+}
+
+.flan-link:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+/* ========================= */
+/* Títulos principales       */
+/* ========================= */
+.flan-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--color-primary);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px 0;
+  border-bottom: 3px solid #e74c3c;
+  background-color: var(--color-light);
+  border-radius: 5px;
+  box-shadow: var(--shadow-light);
+  transition: transform var(--transition-medium), color var(--transition-medium);
+}
+
+.flan-title:hover {
+  color: var(--color-secondary);
+  transform: scale(1.05);
+}
+
+/* ========================= */
+/* Imágenes responsivas      */
+/* ========================= */
+.img-responsive {
+  margin: 0 auto;
+}
+
+/* ========================= */
+/* Títulos secundarios       */
+/* ========================= */
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-secondary);
+  text-align: center;
+  background-color: var(--color-light);
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  box-shadow: var(--shadow-light);
+  transition: transform var(--transition-medium), background-color var(--transition-medium);
+}
+
+h3:hover {
+  background-color: #f8d9a0;
+  color: #e74c3c;
+  transform: scale(1.02);
+}
+
+/* ========================= */
+/* Contenedor de flanes      */
+/* ========================= */
+.flan-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 400px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fffaf0;
+  box-shadow: var(--shadow-light);
+  text-align: center;
+  transition: transform var(--transition-medium), box-shadow var(--transition-medium);
+}
+
+.flan-box:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-medium);
+}
+
+.flan-box img {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* ========================= */
+/* Botón de compra           */
+/* ========================= */
+.btn-warning {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  transition: background-color var(--transition-medium), transform var(--transition-fast);
+}
+
+.btn-warning:hover {
+  background-color: var(--color-secondary);
+  transform: scale(1.05);
+}
+
+/* ========================= */
+/* Paginación                */
+/* ========================= */
+.pagination {
+  display: inline-block;
+  margin: 20px auto;
+}
+
+.pagination > li > a {
+  color: var(--color-primary);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-primary);
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color var(--transition-medium), color var(--transition-medium);
+}
+
+.pagination > li.active > a {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.pagination > li > a:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+}
+
+/* ========================= */
+/* Footer                    */
+/* ========================= */
+.footer {
+  background-color: #222;
+  color: var(--color-white);
+  padding: 20px 0;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.footer .social-icons a {
+  color: var(--color-white);
+  font-size: 20px;
+  margin: 0 10px;
+  transition: color var(--transition-medium);
+}
+
+.footer .social-icons a:hover {
+  color: var(--color-accent);
+}
+
+/* ========================= */
+/* Modo oscuro               */
+/* ========================= */
+body.dark-mode {
+  background-color: var(--color-black);
+  color: #e0e0e0;
+}
+
+.dark-mode .jumbotron-gradient {
+  background: linear-gradient(to right, var(--color-dark), #333);
+  box-shadow: var(--shadow-dark);
+}
+
+.dark-mode .flan-box {
+  background-color: var(--color-dark);
+  border-color: #333;
+  color: #e0e0e0;
+}
+
+.dark-mode .btn-warning {
+  background-color: #800080;
+  border: 1px solid #800080;
+}
+
+.dark-mode .btn-warning:hover {
+  background-color: #9932cc;
+}
+
+.dark-mode h3 {
+  background-color: #292929;
+  color: #800080;
+}
+
+.dark-mode h3:hover {
+  background-color: #333333;
+  color: #9932cc;
+}
+
+.dark-mode .footer {
+  background-color: var(--color-dark);
+}
+
+.dark-mode .pagination > li > a {
+  background-color: #292929;
+  border: 1px solid #444;
+}
+
+.dark-mode .pagination > li.active > a {
+  background-color: #800080;
+}
