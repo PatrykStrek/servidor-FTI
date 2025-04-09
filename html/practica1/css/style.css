@@ -1,21 +1,12 @@
 .tabla-estilo {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px 0;
     font-size: 18px;
-    text-align: left;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-}
-
-.tabla-estilo th, .tabla-estilo td {
-    padding: 12px;
+    text-align: center;
     border: 1px solid #ddd;
 }
 
 .formulario-estilo {
-    display: flex;
-    flex-direction: column;
     gap: 15px;
     background-color: #f3f3f3;
     padding: 20px;
@@ -63,14 +54,14 @@
 }
 
 .lista-ordenada {
-    list-style-type: decimal;
-    padding-left: 20px;
+    list-style-type: upper-roman;
+    padding-left: 60px;
     color: #555;
 }
 
 .lista-desordenada {
     list-style-type: disc;
-    padding-left: 20px;
+    margin-left: 20px;
     color: #555;
 }
 
@@ -90,4 +81,19 @@
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+.tabla-estilo th, .tabla-estilo td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #e5acef;
+    color: #333;
+}
+
+td {
+    background-color: #f3e6eb;
+    color: #000000;
 }
