@@ -8,17 +8,11 @@
 
 .formulario-estilo {
     gap: 15px;
-    background-color: #f3f3f3;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.formulario-estilo input, .formulario-estilo textarea, .formulario-estilo select {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+    margin-bottom: 20px;
 }
 
 .titulo-principal {
@@ -54,15 +48,24 @@
 }
 
 .lista-ordenada {
-    list-style-type: upper-roman;
-    padding-left: 60px;
-    color: #555;
+    list-style-type: upper-roman; /* Estilo de numeración en números romanos */
+    padding-left: 0; /* Elimina el espaciado predeterminado */
+    color: #333; /* Color rosa pastel */
+    margin-bottom: 20px; /* Espaciado inferior */
+    font-size: 18px; /* Tamaño de fuente */
+    font-weight: bold; /* Negrita */
+    text-align: center; /* Centra el texto */
 }
 
+
 .lista-desordenada {
-    list-style-type: disc;
-    margin-left: 20px;
-    color: #555;
+    list-style-type: disc; /* Estilo de viñetas */
+    padding-left: 0; /* Elimina el espaciado predeterminado */
+    color: #333; /* Color rosa claro */
+    margin-bottom: 20px; /* Espaciado inferior */
+    font-size: 18px; /* Tamaño de fuente */
+    font-weight: bold; /* Negrita */
+    text-align: center; /* Centra el texto */
 }
 
 .jumbotron-gradiente {
@@ -83,17 +86,70 @@
     width: 100%;
 }
 
-.tabla-estilo th, .tabla-estilo td {
+.tabla-estilo th {
+    background-color: #ff85c0;
+    color: white;
     padding: 12px;
     border: 1px solid #ddd;
 }
 
-th {
-    background-color: #e5acef;
+.tabla-estilo td {
+    background-color: #ffe6f2;
     color: #333;
+    padding: 12px;
+    border: 1px solid #ddd;
 }
 
-td {
-    background-color: #f3e6eb;
-    color: #000000;
+
+.formulario-estilo input, 
+.formulario-estilo textarea, 
+.formulario-estilo select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 15px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra interna */
+}
+
+.formulario-estilo button {
+    background-color: #ff85c0;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario-estilo button:hover {
+    background-color: #ffa3d7;
+}
+
+.lista-ordenada li {
+    margin-bottom: 10px; /* Espaciado entre elementos */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+}
+
+.lista-desordenada li {
+    margin-bottom: 10px; /* Espaciado entre elementos */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+}
+
+.lista-ordenada,
+.lista-desordenada {
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos estén en columna */
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente si es necesario */
+}
+
+.lista-ordenada li:hover,
+.lista-desordenada li:hover {
+    color: #ff6fa1; /* Cambia el color al pasar el cursor */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    transition: all 0.3s ease; /* Transición suave */
 }
