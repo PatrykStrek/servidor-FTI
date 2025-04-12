@@ -31,12 +31,3 @@ function contarPalabras(texto) {
     var palabras = texto.split(/\s+/);
     return palabras.length;
 }
-
-console.log(contarPalabras("Hola mundo"))
-console.log(contarPalabras("Esto es una prueba") )
-console.log(contarPalabras(" Muchas palabras con espacios "))
-console.log(contarPalabras("") )
-console.log(contarPalabras(" ") ) 
-
- 
-
