@@ -31,3 +31,4 @@ function contarPalabras(texto) {
     var palabras = texto.split(/\s+/);
     return palabras.length;
 }
+
